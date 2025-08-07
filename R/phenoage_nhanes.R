@@ -17,7 +17,7 @@
 #' @import dplyr
 
 
-phenoage_nhanes = function(biomarkers) {
+phenoage_nhanes = function(biomarkers, NHANES4) {
 
   #develop training dataset for Levine's phenoage method
   train = phenoage_calc(data = NHANES3 %>%
